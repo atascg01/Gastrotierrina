@@ -1,0 +1,75 @@
+.restaurant-card {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant-card:hover {
+    box-shadow: 12px 12px 12px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    /* light gray */
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.restaurant-card h2 {
+    margin: 10px 0;
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.search-container {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-input:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* For screens smaller than 600px wide, stack the cards vertically and position the search box at the top center */
+@media (max-width: 600px) {
+    .restaurants-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-container {
+        position: static;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
