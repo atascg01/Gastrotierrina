@@ -4,6 +4,8 @@ import Home from './components/Home/Home';
 import Restaurants from './components/Restaurants/Restaurants';
 import Navigation from './components/Navigation/Navigation';
 import Restaurant from './components/Restaurant/Restaurant';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+
 
 function App() {
   return (
