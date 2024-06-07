@@ -1,0 +1,41 @@
+body {
+    background-color: #eedfc1;
+    font-family: 'Oswald', sans-serif;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-around;
+    animation: moveLeftToRight 15s linear infinite;
+    width: 200%;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-style: italic;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.howItStarted {
+    text-align: left;
+    margin-left: 5%
+}

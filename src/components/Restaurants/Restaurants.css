@@ -1,8 +1,10 @@
 .restaurant-card {
     border: none;
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 5%;
+    margin: 5% 0;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -44,7 +46,7 @@
 .search-container {
     position: absolute;
     top: 10%;
-    right: 20px;
+    right: 10%;
 }
 
 .search-input {

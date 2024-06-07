@@ -10,8 +10,8 @@ const Navigation: React.FC<NavigationProps> = () => {
     return (
         <nav className='navbar'>
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/restaurants">Restaurants</Link></li>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/restaurants">Restaurantes</Link></li>
             </ul>
         </nav>
     );
