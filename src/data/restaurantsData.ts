@@ -1,11 +1,11 @@
 import restaurant from '../images/restaurants/restaurant.jpg';
-import { Restaurant } from '../interfaces/Restaurant';
+import { FoodType, Restaurant } from '../interfaces/Restaurant';
 
 const restaurantsData : Restaurant[] = [
-  { name: 'Becook', img: restaurant, url: 'becook'},
-  { name: 'Clandestino', img: restaurant, url: 'clandestino' },
-  { name: 'Kiosko de Pizza', img: restaurant, url: 'kiosko-de-pizza' },
-  { name: 'La Consentida', img: restaurant, url: 'la-consentida' }
+  { name: 'Becook', img: restaurant, foodType: FoodType.SignatureCuisine, url: 'becook'},
+  { name: 'Clandestino', img: restaurant, foodType: FoodType.SignatureCuisine, url: 'clandestino' },
+  { name: 'Kiosko de Pizza', img: restaurant, foodType: FoodType.Pizza, url: 'kiosko-de-pizza' },
+  { name: 'La Consentida', img: restaurant, foodType: FoodType.Brunch, url: 'la-consentida' }
 ];
 
 export default restaurantsData;

@@ -26,7 +26,6 @@ const Home: React.FC = () => {
                 <div className='brand'>
                     <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
                     <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
-                    <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
                 </div>
             </div>
             <div className='howItStarted'>

@@ -15,12 +15,13 @@ body {
 
 .container {
     overflow: hidden;
+    will-change: transform;
 }
 
 .brand {
     display: flex;
     justify-content: space-around;
-    animation: moveLeftToRight 15s linear infinite;
+    animation: moveLeftToRight 10s linear infinite;
     width: 200%;
 }
 
