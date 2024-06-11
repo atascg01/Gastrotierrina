@@ -3,14 +3,29 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-@keyframes moveLeftToRight {
+@keyframes moveRightToLeft {
     0% {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
+}
+
+.content {
+    display: flex;
+}
+
+.text,
+.image {
+    flex: 1;
+}
+
+.hamburguer {
+    margin-top: 8%;
+    width: 542px;
+    height: 800px;
 }
 
 .container {
@@ -19,9 +34,10 @@ body {
 }
 
 .brand {
+    font-family: 'Shadows Into Light', sans-serif !important;
     display: flex;
     justify-content: space-around;
-    animation: moveLeftToRight 10s linear infinite;
+    animation: moveRightToLeft 11s linear infinite;
     width: 200%;
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import hamburguer from '../../images/hamburguer.jpg'
 
 
 const Home: React.FC = () => {
@@ -19,13 +20,20 @@ const Home: React.FC = () => {
 
     return (
         <div className=''>
-            <h1 className='slang'>PREPÁRATE PARA COMERTE LEÓN</h1>
-            <h2 className='cursive'>"LO MEJOR DE MADRID ES CUANDO VUELVO PA LEÓN"</h2>
-            <h3 className='cursive'>Catalina Grande Piñón Pequeño</h3>
+            <div className='content'>
+                <div className='text'>
+                    <h1 className='slang'>PREPÁRATE PARA COMERTE LEÓN</h1>
+                    <h2 className='cursive'>"LO MEJOR DE MADRID ES CUANDO VUELVO PA LEÓN"</h2>
+                    <h3 className='cursive'>Catalina Grande Piñón Pequeño</h3>
+                </div>
+                <div className='image'>
+                    <img className="hamburguer" src={hamburguer} alt='hamburguesa' />
+                </div>
+            </div>
             <div className='container'>
                 <div className='brand'>
-                    <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
-                    <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
+                    <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA</h1>
+                    <h1>GASTROTIERRINA GASTROTIERRINA GASTROTIERRINA </h1>
                 </div>
             </div>
             <div className='howItStarted'>
