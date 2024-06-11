@@ -6,22 +6,28 @@ import Navigation from './components/Navigation/Navigation';
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import Becook from './components/Becook/Becook';
 import Footer from './components/Footer/Footer';
+import { SelectedTabContext } from './utils/SelectedTabContext';
+import { useState } from 'react';
 
 
 function App() {
+  const [selectedTab, setSelectedTab] = useState('home');
+
   return (
     <div className="App">
-      <Router>
-        <Navigation />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/restaurants" element={<Restaurants />} />
-            <Route path="/restaurants/becook" element={<Becook />} />
-          </Routes>
-        </main>
-        <Footer />
-      </Router>
+      <SelectedTabContext.Provider value={{ selectedTab, setSelectedTab }}>
+        <Router>
+          <Navigation />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/restaurants" element={<Restaurants />} />
+              <Route path="/restaurants/becook" element={<Becook />} />
+            </Routes>
+          </main>
+          <Footer />
+        </Router>
+      </SelectedTabContext.Provider>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const Home: React.FC = () => {
 
         elements.forEach(function (element) {
             const distance_to_top_of_element = element.getBoundingClientRect().top;
-            const offset = 100; // you can change this value
+            const offset = 100;
 
             if (distance_to_top_of_element < window_height - offset) {
                 element.classList.add('visible');
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
 
     return (
         <div className=''>
-            <div className='content'>
+            <div className='wrapper'>
                 <div className='text'>
                     <h1 className='slang'>PREPÁRATE PARA COMERTE LEÓN</h1>
                     <h2 className='cursive'>"LO MEJOR DE MADRID ES CUANDO VUELVO PA LEÓN"</h2>

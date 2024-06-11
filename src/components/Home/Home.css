@@ -1,6 +1,6 @@
 body {
     background-color: #eedfc1;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 @keyframes moveRightToLeft {
@@ -13,19 +13,27 @@ body {
     }
 }
 
-.content {
-    display: flex;
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
 }
 
-.text,
+.text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    font-size: 2em;
+}
+
 .image {
-    flex: 1;
+    grid-column: 2 / 4;
+    grid-row: 1 / 5;
+    margin-right: 20px;
 }
 
 .hamburguer {
-    margin-top: 8%;
-    width: 542px;
-    height: 800px;
+    margin-top: 18%;
+    width: 648px;
+    height: 1000px;
 }
 
 .container {
@@ -47,12 +55,12 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
     color: #333;
     font-size: 1.5em;
 }
 
 .howItStarted {
     text-align: left;
-    margin-left: 5%
+    margin-left: 5%;
+    display: grid;
 }
