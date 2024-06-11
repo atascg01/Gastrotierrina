@@ -35,3 +35,8 @@ footer {
 .footer-content a {
     text-decoration: none;
 }
+
+.scroll-to-top {
+    margin-left: 40px !important;
+    margin-right: 0px !important;
+}

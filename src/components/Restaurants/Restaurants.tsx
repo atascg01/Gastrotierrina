@@ -49,6 +49,9 @@ const Restaurants: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="header-divider">
+        <hr className="footer-divider" />
+      </div>
       <div className="restaurants-grid">
         {filteredRestaurants.map((restaurant, index) => (
           <div key={index} className="restaurant-card" onClick={() => handleCardClick(restaurant.url)}>

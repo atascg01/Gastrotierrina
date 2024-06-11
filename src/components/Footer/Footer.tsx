@@ -2,6 +2,14 @@ import React from 'react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <footer>
             <hr className="footer-divider" />
@@ -18,6 +26,9 @@ const Footer: React.FC = () => {
                     </a>
                     <a href="mailto:gastrotierrina@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i className="fas fa-envelope"></i>
+                    </a>
+                    <a onClick={scrollToTop} className="scroll-to-top" title='Vuelve al comienzo'>
+                        <i className="fa-solid fa-chevron-up"></i>
                     </a>
                 </div>
             </div>
