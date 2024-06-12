@@ -19,7 +19,7 @@ const Home: React.FC = () => {
     });
 
     return (
-        <div className=''>
+        <div className='home'>
             <div className='wrapper'>
                 <div className='text'>
                     <h1 className='slang'>PREPÁRATE PARA COMERTE LEÓN</h1>
