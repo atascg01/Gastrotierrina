@@ -19,7 +19,11 @@
 
 .restaurant-card img {
     width: 100%;
-    height: auto;
+    /* Ensure the image takes up the full width of the card */
+    height: 200px;
+    /* Set a fixed height for the images */
+    object-fit: cover;
+    /* Ensure the image covers the entire area while maintaining aspect ratio */
     border-radius: 8px 8px 0 0;
 }
 
