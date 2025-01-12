@@ -1,12 +1,14 @@
 export interface Restaurant {
     img: string;
+    description: string;
+    price: number;
     name: string;
-    foodType: FoodType;
+    placeType: PlaceType;
     url: string;
 }
 
-export enum FoodType {
-  SignatureCuisine = 'Cocina de Autor',
-  Pizza = 'Pizza',
-  Brunch = 'Brunch'
+export enum PlaceType {
+  Restaurant = 'Restaurante',
+  Coffeshop = 'Cafetería',
+  Shop = 'Tienda'
 }

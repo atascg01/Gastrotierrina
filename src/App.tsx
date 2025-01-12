@@ -1,15 +1,12 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Restaurants from './components/Restaurants/Restaurants';
 import Navigation from './components/Navigation/Navigation';
 import "primereact/resources/themes/lara-light-indigo/theme.css";
-import Becook from './components/Becook/Becook';
 import Footer from './components/Footer/Footer';
 import { SelectedTabContext } from './utils/SelectedTabContext';
 import { useState } from 'react';
 import Favorites from './components/Favorites/Favorites';
-
 
 function App() {
   const [selectedTab, setSelectedTab] = useState('home');
@@ -22,9 +19,7 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/favorites" element={<Favorites />} />
-              <Route path="/restaurants" element={<Restaurants />} />
-              <Route path="/restaurants/becook" element={<Becook />} />
+              <Route path="/favoritos-2025" element={<Favorites />} />
             </Routes>
           </main>
           <Footer />
