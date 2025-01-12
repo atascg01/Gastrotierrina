@@ -39,6 +39,16 @@ const Navigation: React.FC<NavigationProps> = () => {
                             Restaurantes
                         </Link>
                     </div>
+                    <div className="nav-item">
+                        <i className="fas fa-star"></i>
+                        <Link
+                            to="/favorites"
+                            className={selectedTab === 'favorites' ? 'selected' : ''}
+                            onClick={() => setSelectedTab('favorites')}
+                        >
+                            Favoritos
+                        </Link>
+                    </div>
                 </ul>
             </div>
 

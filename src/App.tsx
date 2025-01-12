@@ -8,6 +8,7 @@ import Becook from './components/Becook/Becook';
 import Footer from './components/Footer/Footer';
 import { SelectedTabContext } from './utils/SelectedTabContext';
 import { useState } from 'react';
+import Favorites from './components/Favorites/Favorites';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/favorites" element={<Favorites />} />
               <Route path="/restaurants" element={<Restaurants />} />
               <Route path="/restaurants/becook" element={<Becook />} />
             </Routes>
